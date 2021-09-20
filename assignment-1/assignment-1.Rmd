@@ -1,0 +1,156 @@
+---
+title: "Assignment 1 - Getting started"
+author: "FILL IN YOUR GITHUB USERNAME"
+date: "`r format(Sys.time(), '%B %d, %Y | %H:%M:%S | %Z')`"
+output:
+  html_document:
+    code_folding: show
+    df_print: paged
+    highlight: tango
+    number_sections: no
+    theme: cosmo
+    toc: no
+---
+  
+<style>
+div.answer {background-color:#f3f0ff; border-radius: 5px; padding: 20px;}
+</style>
+
+```{r, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE,
+                      eval = TRUE,
+                      error = FALSE,
+                      message = FALSE,
+                      warning = FALSE,
+                      comment = NA)
+```
+
+<!-- Do not forget to input your Github username in the YAML configuration up there --> 
+
+***
+
+```{r, include = T}
+# LOAD THE PACKAGES YOU ARE USING IN THIS CODE CHUNK library(nameofpackage)
+```
+
+
+### Task 1 - Dealing with a numeric vector [4 points in total]
+
+
+Consider the following numeric vector.
+
+```{r}
+x <- c(34, 56, 55, 87, NA, 4, 77, NA, 21, NA, 39)
+```
+
+a)  What's the mean of all values? And what's the median? [1 point]
+
+```{r}
+
+```
+
+b) What's the variance and the standard deviation of all values? [1 point]
+
+```{r}
+
+```
+
+c) Compute the sum of all values in the vector `x`. [1 point]
+
+```{r}
+
+```
+
+d) Create a new vector, `x_std`, that standardizes `x`, i.e. transforms the values in a way that `mean(x_std) = 0` and `sd(x_std) = 1`. [1 point]
+
+```{r}
+
+```
+
+<br>
+
+***
+
+### Task 2 - Dealing with a character vector  [4 points in total]
+
+Consider the following character vector.
+
+```{r}
+friends <- c("Homer", "Marge", "Bart", "Lisa", "Maggie")
+```
+
+
+a) Get the length of the vector. [1 point]
+
+```{r}
+
+```
+
+b) Extract the first two elements of the vector. [1 point]
+
+```{r}
+
+```
+
+c) Extract the second and the last observation from the vector. [1 point]
+
+```{r}
+
+```
+
+d) Sort the elements in reverse alphabetic order. [1 point]
+
+```{r}
+
+```
+
+
+<br>
+
+***
+
+### Task 3 - A dataset on immigration trips to Ellis Island  [4 points in total]
+
+a) Load the dataset `immigration-ellis.tsv` into R, which contains data on immigration to Ellis Island (1918-1922) by trip. [1 point]
+
+```{r}
+
+```
+
+b) What is the total number of immigration cases in the dataset? [1 point]
+
+```{r}
+
+```
+
+c) From where did the ship with the most immigrants arrive? [1 point]
+
+```{r}
+
+```
+
+d) How many unique ships (according to the name) are in the dataset? [1 point]
+
+```{r}
+
+```
+
+e) Find out the name of the package from the tidyverse that makes working with date and times data easier, and report it below! [1 point]
+
+
+<!-- During this course, we will input our answers that include text inside the tag, as such:
+
+<div class = "answer"> 
+YOU PUT YOUR TEXT HERE
+</div> 
+ 
+Also, you will notice that the text you put inside here will not appear in your .html file.
+That is because very similar to the # in our R scripts, this is a comment tag for html.
+-->
+
+<div class = "answer">
+
+YOUR TEXT SHOULD GO HERE
+
+</div>
+
