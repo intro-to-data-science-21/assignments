@@ -271,7 +271,7 @@ pre code {
 
 <h1 class="title toc-ignore">Assignment 2 - The tidyverse</h1>
 <h4 class="author">FILL IN YOUR FULL NAME</h4>
-<h4 class="date">September 21, 2021 | 12:26:56 | CEST</h4>
+<h4 class="date">September 22, 2021 | 10:54:56 | CEST</h4>
 
 </div>
 
@@ -279,7 +279,6 @@ pre code {
 <style>
 div.answer {background-color:#f3f0ff; border-radius: 5px; padding: 20px;}
 </style>
-<!-- Do not forget to input your Github username in the YAML configuration up there -->
 <hr />
 <div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># LOAD THE PACKAGES YOU ARE USING IN THIS CODE CHUNK library(nameofpackage)</span></span></code></pre></div>
 <p><br></p>
@@ -348,70 +347,57 @@ div.answer {background-color:#f3f0ff; border-radius: 5px; padding: 20px;}
 <p><br></p>
 <hr />
 </div>
-<div id="task-1---fun-with-descriptives-x-points-in-total" class="section level3">
-<h3>Task 1 - Fun with descriptives [X points in total]</h3>
+<div id="task-1---fun-with-descriptives-8-points-in-total" class="section level3">
+<h3>Task 1 - Fun with descriptives [8 points in total]</h3>
 <ol style="list-style-type: lower-alpha">
-<li></li>
+<li>What’s the overall share of female legislators in the entire dataset? [1 point]</li>
 </ol>
-<p>Consider the following numeric vector.</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(legislatoR)</span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>dat_core <span class="ot">&lt;-</span> <span class="fu">get_core</span>(<span class="at">legislature =</span> <span class="st">&quot;deu&quot;</span>)</span>
-<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>dat_political <span class="ot">&lt;-</span> <span class="fu">get_political</span>(<span class="at">legislature =</span> <span class="st">&quot;deu&quot;</span>)</span>
-<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a><span class="co"># entire dataset</span></span>
-<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a><span class="co"># Find out who has got the longest name and who the shortest (both in terms of number of characters)!</span></span>
-<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a><span class="co"># Filter to those with a death date: distribution of age</span></span>
-<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a><span class="co"># Add new variable: age</span></span>
-<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a><span class="co"># Join with political: Distribution of party membership</span></span>
-<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a><span class="co"># only the latest session</span></span></code></pre></div>
-<ol style="list-style-type: lower-alpha">
-<li><p>What’s the overall share of female legislators in the entire dataset? [1 point]</p></li>
-<li><p>How many (both in absolute and relative terms) legislators died in the same place they were born in? [1 point]</p></li>
-<li><p>Create a new variable <code>age_at_death</code> that reports the age at which legislators died. Then, plot the distribution of that variable for the entire dataset. [2 point]</p></li>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># YOUR CODE HERE</span></span></code></pre></div>
+<ol start="2" style="list-style-type: lower-alpha">
+<li>How many (both in absolute and relative terms) legislators died in the same place they were born in? [1 point]</li>
 </ol>
+<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># YOUR CODE HERE</span></span></code></pre></div>
+<ol start="3" style="list-style-type: lower-alpha">
+<li>Create a new variable <code>age_at_death</code> that reports the age at which legislators died. Then, plot the distribution of that variable for the entire dataset. [2 points]</li>
+</ol>
+<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co"># YOUR CODE HERE</span></span></code></pre></div>
+<ol start="4" style="list-style-type: lower-alpha">
+<li>Provide one single table that provides the 5 legislators with the highest and lowest age at death, ignoring ties. [2 points]</li>
+</ol>
+<div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co"># YOUR CODE HERE</span></span></code></pre></div>
+<ol start="5" style="list-style-type: lower-alpha">
+<li>Find out who has got the longest name and who the shortest (both in terms of number of characters, ignoring whitespace)! [2 points]</li>
+</ol>
+<div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co"># YOUR CODE HERE</span></span></code></pre></div>
 <p><br></p>
 <hr />
 </div>
-<div id="task-2---dealing-with-a-character-vector-4-points-in-total" class="section level3">
-<h3>Task 2 - Dealing with a character vector [4 points in total]</h3>
-<p>Consider the following character vector.</p>
-<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>friends <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">&quot;Homer&quot;</span>, <span class="st">&quot;Marge&quot;</span>, <span class="st">&quot;Bart&quot;</span>, <span class="st">&quot;Lisa&quot;</span>, <span class="st">&quot;Maggie&quot;</span>)</span></code></pre></div>
+<div id="task-2---exploring-trends-in-the-data-8-points-in-total" class="section level3">
+<h3>Task 2 - Exploring trends in the data [8 points in total]</h3>
 <ol style="list-style-type: lower-alpha">
-<li><p>Get the length of the vector. [1 point]</p></li>
-<li><p>Extract the first two elements of the vector. [1 point]</p></li>
-<li><p>Extract the second and the last observation from the vector. [1 point]</p></li>
-<li><p>Sort the elements in reverse alphabetic order. [1 point]</p></li>
+<li>Using data from all sessions, provide a plot that shows the share of female legislators by session! [3 points]</li>
 </ol>
-<p><br></p>
-<hr />
-</div>
-<div id="task-3---a-dataset-on-immigration-trips-to-ellis-island-4-points-in-total" class="section level3">
-<h3>Task 3 - A dataset on immigration trips to Ellis Island [4 points in total]</h3>
-<ol style="list-style-type: lower-alpha">
-<li><p>Load the dataset <code>immigration-ellis.tsv</code> into R, which contains data on immigration to Ellis Island (1918-1922) by trip. [1 point]</p></li>
-<li><p>What is the total number of immigration cases in the dataset? [1 point]</p></li>
-<li><p>From where did the ship with the most immigrants arrive? [1 point]</p></li>
-<li><p>How many unique ships (according to the name) are in the dataset? [1 point]</p></li>
-<li><p>Find out the name of the package from the tidyverse that makes working with date and times data easier, and report it below! [1 point]</p></li>
+<div class="sourceCode" id="cb7"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co"># YOUR CODE HERE</span></span></code></pre></div>
+<ol start="2" style="list-style-type: lower-alpha">
+<li>Explore another relation of variables in the dataset. Your analysis should (i) use data from both the <code>core</code> and the <code>political</code> table and (ii) feature data from several sessions. Also, offer a brief description and interpretation of your findings! [5 points]</li>
 </ol>
-<!-- During this course, we will input our answers that include text inside the tag, as such:
-
-<div class = "answer"> 
-YOU PUT YOUR TEXT HERE
-</div> 
- 
-Also, you will notice that the text you put inside here will not appear in your .html file.
-That is because very similar to the # in our R scripts, this is a comment tag for html.
--->
+<div class="sourceCode" id="cb8"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="co"># YOUR CODE HERE</span></span></code></pre></div>
 <div class="answer">
-<p>YOUR TEXT SHOULD GO HERE</p>
+<p>YOUR ANSWER SHOULD GO HERE</p>
 </div>
+<p><br></p>
+<hr />
+</div>
+<div id="task-3---fun-with-functions-3-points-in-total" class="section level3">
+<h3>Task 3 - Fun with functions [3 points in total]</h3>
+<ol style="list-style-type: lower-alpha">
+<li>Program a function ultimate_answer() that always returns the number 42, and prove that it works! [1 point]</li>
+</ol>
+<div class="sourceCode" id="cb9"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="co"># YOUR CODE HERE</span></span></code></pre></div>
+<ol start="2" style="list-style-type: lower-alpha">
+<li>Program a function normalize() that normalizes a numeric vector x to mean(x) = 0 and sd(x) = 1! Then, apply it to all numeric variables in the mtcars dataset! [2 points]</li>
+</ol>
+<div class="sourceCode" id="cb10"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="co"># YOUR CODE HERE</span></span></code></pre></div>
 </div>
 
 
