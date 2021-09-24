@@ -12,7 +12,7 @@ In this repository you'll find materials for the weekly assignments (just for th
 | 04 | Relational databases and SQL | -- | --  | 
 | 05 | Web data and technologies | 3 | Oct 20  | 
 | 06 | Model fitting and simulation | 4 | Nov 3  | 
-| 07 | Visualization | 5 | Nov 18  | 
+| 07 | Visualization | 5 | Nov 17  | 
 | 08 | Workshop: Tools for Data Science | -- | --  | 
 | 09 | Working at the command line | -- | --  | 
 | 10 | Debugging, automation, packaging | 6 | Dec 1  | 
