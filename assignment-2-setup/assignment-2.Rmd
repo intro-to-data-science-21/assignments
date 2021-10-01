@@ -1,0 +1,137 @@
+---
+title: "Assignment 2 - The tidyverse"
+author: "FILL IN YOUR FULL NAME"
+date: "`r format(Sys.time(), '%B %d, %Y | %H:%M:%S | %Z')`"
+output:
+  html_document:
+    code_folding: show
+    df_print: paged
+    highlight: tango
+    number_sections: no
+    theme: cosmo
+    toc: no
+---
+  
+<style>
+div.answer {background-color:#f3f0ff; border-radius: 5px; padding: 20px;}
+</style>
+
+```{r, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE,
+                      eval = TRUE,
+                      error = FALSE,
+                      message = FALSE,
+                      warning = FALSE,
+                      comment = NA)
+```
+
+<!-- Do not forget to input your Github username in the YAML configuration up there --> 
+
+***
+
+```{r, include = T}
+# LOAD THE PACKAGES YOU ARE USING IN THIS CODE CHUNK library(nameofpackage)
+```
+
+<br>
+
+### Getting started with the Comparative Legislators Database
+
+The Comparative Legislators Database (CLD) includes political, sociodemographic, career, online presence, public attention, and visual information for over 45,000 contemporary and historical politicians from ten countries (see the [corresponding article](https://www.cambridge.org/core/journals/british-journal-of-political-science/article/comparative-legislators-database/D28BB58A8B2C08C8593DB741F42C18B2) for more information). It can be accessed via `legislatoR` - an R package that is available on both [CRAN](https://cran.r-project.org/web/packages/legislatoR/index.html) and [GitHub](https://github.com/saschagobel/legislatoR).
+
+Before you start with the following tasks, skim the tutorial to make yourself familiar with the database. You find it [here](https://cran.r-project.org/web/packages/legislatoR/vignettes/legislatoR.html).
+
+For the following tasks, you will work with ONE of the legislatures. The legislature you'll work with depends on your prename:
+
+| Your prename starts with... | Legislature | Code |
+|---------|-------|-------|
+| A-C | Austrian Nationalrat | `aut` |
+| D-F | Canadian House of Commons | `can` |
+| G-I | Czech Poslanecka Snemovna | `cze` |
+| J-L | Spanish Congreso de los Diputados | `esp` |
+| M-O | French Assemblée | `fra` |
+| P-R | German Bundestag | `deu` |
+| S-U | Irish Dail | `irl` |
+| V-X | UK House of Commons | `gbr` |
+| Y-Z | US House of Representatives  | `usa_house` |
+
+The following tasks will be based on data from the `core` and `political` tables of the database.
+
+<br>
+
+***
+
+### Task 1 - Fun with descriptives [8 points in total]
+
+a) What's the overall share of female legislators in the entire dataset? [1 point]
+
+```{r}
+# YOUR CODE HERE
+```
+
+b) How many (both in absolute and relative terms) legislators died in the same place they were born in? [1 point]
+
+```{r}
+# YOUR CODE HERE
+```
+
+c) Create a new variable `age_at_death` that reports the age at which legislators died. Then, plot the distribution of that variable for the entire dataset. [2 points]
+
+```{r}
+# YOUR CODE HERE
+```
+
+d) Provide one single table that provides the 5 legislators with the highest and lowest age at death, ignoring ties. [2 points]
+
+```{r}
+# YOUR CODE HERE
+```
+
+e) Find out who has got the longest name and who the shortest (both in terms of number of characters, ignoring whitespace)! [2 points]
+
+```{r}
+# YOUR CODE HERE
+```
+
+<br>
+
+***
+
+### Task 2 - Exploring trends in the data [8 points in total]
+
+a) Using data from all sessions, provide a plot that shows the share of female legislators by session! [3 points]
+
+```{r}
+# YOUR CODE HERE
+```
+
+b) Explore another relation of variables in the dataset. Your analysis should (i) use data from both the `core` and the `political` table and (ii) feature data from several sessions. Also, offer a brief description and interpretation of your findings! [5 points]
+
+```{r}
+# YOUR CODE HERE
+```
+
+<div class = "answer">
+YOUR ANSWER SHOULD GO HERE
+</div>
+
+<br>
+
+***
+
+### Task 3 - Fun with functions [3 points in total]
+
+a) Program a function `ultimate_answer()` that always returns the number 42, and prove that it works! [1 point]
+
+```{r}
+# YOUR CODE HERE
+```
+
+b) Program a robust function `normalize()` that normalizes a numeric vector x to mean(x) = 0 and sd(x) = 1! Then, apply it to all numeric variables in the mtcars dataset! [2 points]
+
+```{r}
+# YOUR CODE HERE
+```
+
+
+
