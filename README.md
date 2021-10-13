@@ -11,7 +11,7 @@ In this repository you'll find materials for the weekly assignments (just for th
 | 03 | R and the tidyverse | 2 | Oct 6  | 
 | 04 | Relational databases and SQL | -- | --  | 
 | 05 | Web data and technologies | 3 | Oct 20  | 
-| 06 | Model fitting and simulation | 4 | Nov 3  | 
+| 06 | Model fitting and simulation | 4 | Nov 10  | 
 | 07 | Visualization | 5 | Nov 17  | 
 | 08 | Workshop: Tools for Data Science | -- | --  | 
 | 09 | Working at the command line | -- | --  | 
