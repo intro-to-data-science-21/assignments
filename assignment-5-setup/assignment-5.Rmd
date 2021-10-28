@@ -1,0 +1,84 @@
+---
+title: "Assignment 5 - Visualization"
+author: "FILL IN YOUR FULL NAME"
+date: "`r format(Sys.time(), '%B %d, %Y | %H:%M:%S | %Z')`"
+output:
+  html_document:
+    code_folding: show
+    df_print: paged
+    highlight: tango
+    number_sections: no
+    theme: cosmo
+    toc: no
+---
+  
+<style>
+div.answer {background-color:#f3f0ff; border-radius: 5px; padding: 20px;}
+</style>
+
+```{r, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE,
+                      eval = TRUE,
+                      error = FALSE,
+                      message = FALSE,
+                      warning = FALSE,
+                      comment = NA)
+```
+
+***
+
+```{r, include = T}
+# LOAD THE PACKAGES YOU ARE USING IN THIS CODE CHUNK
+```
+
+<br>
+
+***
+
+### Task 1 - The dos and dont's of data visualization [10 points in total]
+
+On slide 75 of the lecture slides ("Dos and "Don'ts") you find a linked list of 20 statements expressing principles of good data visualization. Follow the links to learn more about them.
+
+a) Select one of those principles and illustrate it as follows: [5 points]
+
+  (i) Create a two-panel plot. The left panel shows a poorly designed plot (e.g., a 3D plot), the right panel shows a well-designed alternative using the same data. Note: check out [this vignette](https://cran.r-project.org/web/packages/egg/vignettes/Ecosystem.html) to learn how combine multiple plots into one plot. You are free to use whatever data you want to make your point.
+  (ii) The title of the plot should be: Number (according to the list) and name of the principle, e.g. "**18. Don't go 3D.**"
+  (iii) The bottom of the plot should provide a note that explains, in a few sentences, the principle illustrated in the plot and how the right is an improved over the left version.
+  (iv) Embed the plot in your Rmd but also provide it as a `.png` or `.pdf` in your submission repo.
+  
+```{r}
+# YOUR CODE HERE
+```
+
+b) Now, come up with another principle of good data visualization **that is not listed on the slide** and illustrate it following the instructions in the previous task. [5 points]
+
+```{r}
+# YOUR CODE HERE
+```
+
+### Task 2 - The dos and dont's of data visualization [6 points in total]
+
+Over at [Our World in Data](https://ourworldindata.org/grapher/life-expectancy-vs-health-expenditure) you will find a chart illustrating life expectancy vs. health expenditure, 1970 to 2015, across countries.
+
+a) Download the data and reproduce the plot as closely as possible using only the 2015 data (i.e. the bubble scatter plot that you see when you move the slider to the right) and linear scales. You can ignore the interactive features and are free in your choice of color scales and labels within the plotting area. [3 points]
+
+```{r}
+# YOUR CODE HERE
+```
+
+b) Using the complete dataset, reproduce the full connected scatter plot. Again, you are free in your choice of color scales and labels within the plotting area. [3 points]
+
+```{r}
+# YOUR CODE HERE
+```
+
+
+### Task 3 - IMDb mall multiples [5 points in total]
+
+The dataset contains rating information on series and episodes from the InternetMovieDatabase. Use these data to create a small multiples plot that illustrates a relationship of your choice. You can work with the entire dataset or a subset. Your plot should adhere to the principles of good design. In addition to the visualization, provide a brief discussion (10 sentences or less) of what the plot might tell us.
+
+```{r}
+# YOUR CODE HERE
+```
+
+

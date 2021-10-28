@@ -1,0 +1,114 @@
+---
+title: "Assignment 3 - Web data and technologies"
+author: "FILL IN YOUR FULL NAME"
+date: "`r format(Sys.time(), '%B %d, %Y | %H:%M:%S | %Z')`"
+output:
+  html_document:
+    code_folding: show
+    df_print: paged
+    highlight: tango
+    number_sections: no
+    theme: cosmo
+    toc: no
+---
+  
+<style>
+div.answer {background-color:#f3f0ff; border-radius: 5px; padding: 20px;}
+</style>
+
+```{r, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE,
+                      eval = TRUE,
+                      error = FALSE,
+                      message = FALSE,
+                      warning = FALSE,
+                      comment = NA)
+```
+
+<!-- Do not forget to input your Github username in the YAML configuration up there --> 
+
+***
+
+```{r, include = T}
+# LOAD THE PACKAGES YOU ARE USING IN THIS CODE CHUNK
+```
+
+<br>
+
+***
+
+### Task 1 - Towers of the world [7 points in total]
+
+The article [List of tallest towers](https://en.wikipedia.org/wiki/List_of_tallest_towers) on the English Wikipedia provides various lists and tables of tall towers. Using the article version as it was published at 17:14, 26 September 2021 (accessible under the following permanent link: https://en.wikipedia.org/w/index.php?title=List_of_tallest_towers&oldid=1046628459), work on the following tasks.
+
+a) Scrape the table "Towers proposed or under construction" and parse the data into a data frame. Clean the variables for further analysis. Then, print the dataset. [5 points]
+
+```{r}
+# YOUR CODE HERE
+```
+
+<br>
+
+b) How many of those buildings are planned for observation purposes? Use R to compute the answer. [1 point]
+
+```{r}
+# YOUR CODE HERE
+```
+
+<br>
+
+c) What is the sum of the planned pinnacle height of all those towers? Again, use R to compute the answer.  [1 point]
+
+```{r}
+# YOUR CODE HERE
+```
+
+
+<br>
+
+***
+
+### Task 2 - Scraping newspaper headlines [14 points in total]
+
+Use Selectorgadget and R to scrape the article headlines from https://www.theguardian.com/international. 
+
+a) Provide the first 6 observations from the uncleaned vector of scraped headlines. [3 points]
+
+```{r}
+# YOUR CODE HERE
+```
+
+<br>
+
+b) Tidy the text data (e.g., remove irrelevant characters if there are any, and get rid of duplicates), compute the number of unique headings, and provide a random sample of 5 headings. [2 points]
+
+```{r}
+# YOUR CODE HERE
+```
+
+<br>
+
+c) Identify the 5 most frequent words in all headlines, excluding English stopwords. (Hint: use a string processing function from the `stringr` package to split up the headings word by word, and use an empty space, " ", as splitting pattern.) [2 points]
+
+```{r}
+# YOUR CODE HERE
+```
+
+<br>
+
+d) Develop an XPath expression that locates the set of links pointing to the articles behind the headings from the previous tasks and apply it to extract those links, storing them in a vector. List the first 5 links. *Note: The number of links might not be identical to the number of headings you extracted above. You may ignore minor differences.* [3 points]
+
+```{r}
+# YOUR CODE HERE
+```
+
+<br>
+
+e) Provide polite code that downloads the article HTMLs to a local folder. Provide proof that the download was performed successfully by listing the first 5 files in the folder and giving the total number of files contained by the folder. Make sure that the folder itself is not synced to GitHub using `.gitignore`. [4 points]
+
+```{r}
+# YOUR CODE HERE
+```
+
+
+

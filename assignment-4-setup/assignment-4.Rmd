@@ -1,0 +1,112 @@
+---
+title: "Assignment 4 - Model fitting"
+author: "FILL IN YOUR FULL NAME"
+date: "`r format(Sys.time(), '%B %d, %Y | %H:%M:%S | %Z')`"
+output:
+  html_document:
+    code_folding: show
+    df_print: paged
+    highlight: tango
+    number_sections: no
+    theme: cosmo
+    toc: no
+---
+  
+<style>
+div.answer {background-color:#f3f0ff; border-radius: 5px; padding: 20px;}
+</style>
+
+```{r, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE,
+                      eval = TRUE,
+                      error = FALSE,
+                      message = FALSE,
+                      warning = FALSE,
+                      comment = NA)
+```
+
+***
+
+```{r, include = T}
+# LOAD THE PACKAGES YOU ARE USING IN THIS CODE CHUNK library(nameofpackage)
+```
+
+<br>
+
+***
+
+### Task 1 - Pruning the news feed [15 points in total]
+
+In her article ["Pruning the news feed: Unfriending and unfollowing political content on social media" (Research & Politics 2016)](https://doi.org/10.1177/2053168016661873), Leticia Bode explores the extent to which users exercise control over their social media experiences, and who tends to engage in avoidance of political information by unfriending people who post about politics on social media. In the following, you are asked to reproduce some of her findings presented in the paper. To do so, check out the paper (accessible under the link above; ungated) and work with the dataset `bode-pew-data.sav` that you find in your assignment repository.
+
+a) Reproduce **Figure 1**. Note that the corresponding variables in the dataset are named `ufptm`, `ufdo`, `ufa`, `ufdy`, `ufwo` (in the order that is shown in the original plot). The original plot has some bad/ugly features. When reproducing the figure, improve over the original design, and justify your design choices. [3 points]
+
+```{r}
+# YOUR CODE SHOULD GO HERE.
+```
+
+<div class = "answer">
+YOUR JUSTIFICATION SHOULD GO HERE.
+</div>
+
+<br>
+
+b) Reproduce the results from **Table 1** and present them in a clean table that is at least as informative as the original one. Discuss deviations from the original results if there are any. [3 points]
+
+```{r}
+# YOUR CODE SHOULD GO HERE.
+```
+
+<div class = "answer">
+YOUR DISCUSSION SHOULD GO HERE.
+</div>
+
+<br>
+
+c) Offer a visual representation of the results provided in Table 1 using a well-designed coefficient plot. [2 points]
+
+```{r}
+# YOUR CODE SHOULD GO HERE.
+```
+
+<br>
+
+d) Run `lm` models for all possible combinations of covariates from the original model and store the estimates. Then, provide visual evidence how the estimates for the four key predictors of interest (linked to H1A, H1B, H2, and H3) vary across those specifications, and briefly discuss your findings. [3 points]
+
+```{r}
+# YOUR CODE SHOULD GO HERE.
+```
+
+<div class = "answer">
+YOUR DISCUSSION SHOULD GO HERE.
+</div>
+
+<br>
+
+e) Run a specification curve analysis for one of the four effects of interest. When doing so, come up with (a) an alternative measure of the response (can be just a transformation of the original measure), (b) an alternative key predictor measure (can be just a transformation of the original measure), and (c) different subsets of the data. More plausible criteria to generate alternative specifications are possible. Briefly discuss the results.  [4 points]
+
+```{r}
+# YOUR CODE SHOULD GO HERE.
+```
+
+<div class = "answer">
+YOUR DISCUSSION SHOULD GO HERE.
+</div>
+
+<br>
+
+### Task 2 - Predicting y [3 points in total]
+
+It's Friday evening and your somewhat nerdy friend visits you in your apartment. In her luggage she has a USB stick, on which you find the file `PrEdIcTiOn.csv`. She explains that her boss gave her this stick today together with the following task: 
+
+*The dataset contains one response variable `y` and 10 predictor variables `c1` to `c10`. There are various plausible explanations for the `y` values using the other variables in the dataset, but one of them is the most plausible of all. Provide the best explanation or prediction of `y` using one, several, or all predictors at once. In the end, provide an explanation of how the `y` values were generated (some noise will likely be part of the story)!*
+
+You decide to help your friend because she's promised to help you with your public policy assignment in return. What is your solution?
+ 
+```{r}
+# YOUR CODE SHOULD GO HERE.
+```
+
+<div class = "answer">
+YOUR ANSWER SHOULD GO HERE.
+</div>
